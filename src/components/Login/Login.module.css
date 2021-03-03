@@ -1,0 +1,19 @@
+span {
+    font-size: 110% !important;
+}
+
+.button {
+    margin-top: 35px !important;
+}
+
+.container {
+    margin-top: 75px;
+}
+
+.form p {
+    margin: 15px 0 -10px 0;
+    font-size: 115% !important;
+    font-weight: bold;
+    color: #F44336;
+    text-align: center;
+}

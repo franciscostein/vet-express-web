@@ -1,0 +1,27 @@
+header {
+    font-size: 150%;
+    color: #fff !important;
+    font-weight: 400;
+}
+
+img {
+    height: 32px !important;
+    width: 32px !important;
+    opacity: 1;
+    transition: opacity 0.3s;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+img:hover {
+    opacity: 0.75;
+}
+
+.title {
+    font-size: 110%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 3px;
+}

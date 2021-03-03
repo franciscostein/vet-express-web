@@ -1,0 +1,269 @@
+/* BASIC SETUP */
+
+.content { /* footer sticker, 100%vh - (75px footer h + 35px footer marginTop + 105px headerBar h) */
+	min-height: calc(100vh - 215px);
+}
+
+.clearfix {zoom: 1} /* it clears the float after an element */
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*  GROUPING  ============================================================================= */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /* shorthand for 0 auto 0 auto   - top right bottom left */
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { 
+    margin-left: 0 !important; 
+} /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+        margin: 0 !important;
+	}
+}
+
+/*  GRID OF TWO   ============================================================================= */
+
+.span2of2 {
+	width: 100%;
+}
+
+.span1of2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span2of2 {
+		width: 100%; 
+	}
+	.span1of2 {
+		width: 100%; 
+	}
+}
+
+/*  GRID OF THREE   ============================================================================= */
+	
+.span3of3 {
+    width: 100%;
+}
+
+.span2of3 {
+	width: 66.13%; 
+}
+
+.span1of3 {
+	width: 32.26%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span3of3 {
+		width: 100%; 
+	}
+	.span2of3 {
+		width: 100%; 
+	}
+	.span1of3 {
+		width: 100%;
+	}
+}
+
+/*  GRID OF FOUR   ============================================================================= */
+	
+.span4of4 {
+	width: 100%; 
+}
+
+.span3of4 {
+	width: 74.6%; 
+}
+
+.span2of4 {
+	width: 49.2%; 
+}
+
+.span1of4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span4of4 {
+		width: 100%; 
+	}
+	.span3of4 {
+		width: 100%; 
+	}
+	.span2of4 {
+		width: 100%; 
+	}
+	.span1of4 {
+		width: 100%; 
+	}
+}
+
+/*  GRID OF FIVE   ============================================================================= */
+
+.span5of5 {
+	width: 100%;
+}
+
+.span4of5 {
+  	width: 79.68%; 
+}
+
+.span3of5 {
+  	width: 59.36%; 
+}
+
+.span2of5 {
+  	width: 39.04%;
+}
+
+.span1of5 {
+  	width: 18.72%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span5of5 {
+		width: 100%; 
+	}
+	.span4of5 {
+		width: 100%; 
+	}
+	.span3of5 {
+		width: 100%; 
+	}
+	.span2of5 {
+		width: 100%; 
+	}
+	.span1of5 {
+		width: 100%; 
+	}
+}
+
+/*  GRID OF TWELVE   ============================================================================= */
+
+.span11of12 {
+	width: 91.53%;
+}
+
+.span1of12 {
+    width: 6.86%;
+}
+
+/* HEADINGS ========================================================================================= */
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 40px !important;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 110%;
+	margin-top: 50px !important;
+	margin-bottom: -10px !important;
+	font-weight: 400 bold;
+	color: #555;
+}
+
+/* FORM ========================================================================================= */
+
+form {
+    width: 75%;
+    margin: 0 auto !important;
+}
+
+@media only screen and (max-width: 600px) {
+	form {
+		width: 90%;
+	}
+}
+
+.formTable {
+	width: 90% !important;
+	margin-top: 30px !important;
+}
+
+@media only screen and (max-width: 480px) {
+	.formTable {
+		width: 100% !important;
+		margin-top: 30px !important;
+	}
+}
+
+/* FIELS ========================================================================================= */
+
+.floatRight {
+    float: right !important;
+}
+
+@media only screen and (max-width: 480px) {
+	.floatRight {	/* because in devices with < 480px which item will have its line  */
+		float: left !important;
+	}
+}
+
+.select {
+    padding-top: 12px;
+}
+
+.switch {
+    padding-top: 35px;
+}
+
+.fabMarginTop {
+    margin-top: 10px !important;
+}
+
+/* BUTTONS ========================================================================================= */
+
+.primaryButton,
+.secondaryButton:hover {
+	color: #fff !important;
+}
+
+.secondaryButton {
+	color: #777 !important;
+}
